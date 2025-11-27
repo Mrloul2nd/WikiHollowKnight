@@ -1,0 +1,84 @@
+/* basic page type & spacing */
+body {
+  font-family: "Times New Roman", serif;
+  margin: 20px;
+  line-height: 1.5;
+  color: #111;
+}
+
+/* headings */
+.page-title {
+  font-size: 48px; /* same effect as size="7" but modern */
+  margin: 0;
+}
+.section-title {
+  font-size: 36px;
+  margin: 8px 0 18px;
+}
+
+/* nav layout: center items with even spacing */
+.ligne {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin: 12px 0 24px;
+}
+.ligne a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* main (left) image style */
+.main-image {
+  display: block;
+  max-width: 100%;
+  width: 420px; /* adjust as needed */
+  margin: 0 auto 16px;
+}
+
+/* RIGHT-ALIGNED IMAGE — float method */
+.right-image {
+  float: right;        /* moves image to the right and allows text wrap */
+  max-width: 220px;    /* responsive cap */
+  width: 25%;          /* flexible size; adjust as needed */
+  margin: 0 0 12px 18px; /* space between image and content */
+  display: block;
+}
+
+/* clearfix helper so following blocks (table) don't tuck under the float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* table styling */
+table {
+  border-collapse: collapse;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 900px;
+}
+th, td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background: #f2f2f2;
+}
+
+/* small screens: make image smaller and stop floating if very narrow */
+@media (max-width: 520px) {
+  .right-image {
+    float: none;
+    display: block;
+    margin: 12px auto;
+    width: 60%;
+  }
+  .ligne {
+    gap: 12px;
+    flex-direction: column;
+  }
+}
