@@ -1,0 +1,20 @@
+
+.right-image {
+  float: right;
+  margin: 0 0 12px 18px;
+  display: block;
+}
+.centre {
+  display: flex;
+  justify-content: center;
+}
+.right {
+  text-align: right;
+}
+.ligne {
+  display: flex;
+  justify-content: center;
+  gap: 32%;
+  align-items: center;
+  width: 100%;
+}
