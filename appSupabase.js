@@ -3,8 +3,8 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 
 //  Récupère ces infos dans ton dashboard Supabase (URL + publishable/anon key)
-const SUPABASE_URL = "Mettrel'URL copiée sur Supabase ici";
-const SUPABASE_KEY = "Mettre la clé publique de votre projet Supabase ici";
+const SUPABASE_URL = "https://zvpfwpvkyavzcmfblubq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_YnIgpDmcEVX3EFSrN-6mKg_HBC59Isd";
 
 //  Client Supabase
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
