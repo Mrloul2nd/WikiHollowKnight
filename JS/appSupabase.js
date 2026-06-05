@@ -1,6 +1,6 @@
 //Importation de Supabase
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
+alert("bonjours");
 
 //  Récupère ces infos dans ton dashboard Supabase (URL + publishable/anon key)
 const SUPABASE_URL = "https://zvpfwpvkyavzcmfblubq.supabase.co";
